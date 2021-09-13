@@ -38,5 +38,6 @@ app.get("/project/:id", function(req,res){
 //parameter that comes in body when post and put request is done
 app.post("/project/:id", function(req,res){
     var obj = req.body;
-    res.send("Hello Post" + obj.name)
+    res.send(obj)
+    //res.send("Hello Post" + obj.name)
 });
